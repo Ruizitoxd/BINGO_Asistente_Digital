@@ -1,10 +1,10 @@
 import pytest
 
-from app.core.module import JarvisModule
+from app.core.module import BingoModule
 from app.core.registry import ModuleRegistry
 
 
-class FakeModule(JarvisModule):
+class FakeModule(BingoModule):
     def __init__(self, name, fail=False):
         self._name, self.fail = name, fail
         self.started = False

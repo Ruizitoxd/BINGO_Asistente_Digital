@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 from typing import Any
 
 
-class JarvisModule(ABC):
+class BingoModule(ABC):
     """Contrato base de los módulos extensibles del servidor."""
 
     @property

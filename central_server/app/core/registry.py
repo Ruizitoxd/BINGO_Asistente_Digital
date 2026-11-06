@@ -1,14 +1,14 @@
-from app.core.module import JarvisModule
+from app.core.module import BingoModule
 
 
 class ModuleRegistry:
     """Registro de módulos y administración de su ciclo de vida."""
 
     def __init__(self) -> None:
-        self._modules: dict[str, JarvisModule] = {}
+        self._modules: dict[str, BingoModule] = {}
         self._initialized: list[str] = []
 
-    def register(self, module: JarvisModule) -> None:
+    def register(self, module: BingoModule) -> None:
         name = module.name.strip()
         if not name:
             raise ValueError("El nombre del módulo no puede estar vacío.")
@@ -16,7 +16,7 @@ class ModuleRegistry:
             raise ValueError(f"El módulo '{name}' ya está registrado.")
         self._modules[name] = module
 
-    def get(self, name: str) -> JarvisModule:
+    def get(self, name: str) -> BingoModule:
         if name not in self._modules:
             raise KeyError(f"No existe el módulo '{name}'.")
         return self._modules[name]

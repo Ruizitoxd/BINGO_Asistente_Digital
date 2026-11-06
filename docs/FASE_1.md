@@ -3,7 +3,7 @@
 - Servidor central alojado inicialmente en el portátil Windows 11.
 - Monolito modular con FastAPI.
 - Contratos Pydantic con versión de esquema.
-- Módulos implementan `JarvisModule` y se registran en `app/bootstrap.py`.
+- Módulos implementan `BingoModule` y se registran en `app/bootstrap.py`.
 - API versionada bajo `/api/v1`.
 - Desarrollo limitado a `127.0.0.1` hasta implementar autenticación y acceso remoto.
 

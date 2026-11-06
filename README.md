@@ -1,4 +1,4 @@
-# JARVIS — Fase 1
+# BINGO — Fase 1
 
 Esqueleto inicial del servidor central para Windows 11. Incluye configuración,
 contratos Pydantic, interfaz y registro de módulos, API FastAPI y pruebas.
@@ -29,7 +29,7 @@ pytest
 ```
 
 ## Añadir un módulo
-Crear un paquete en `app/modules/`, implementar `JarvisModule` y registrarlo
+Crear un paquete en `app/modules/`, implementar `BingoModule` y registrarlo
 en `app/bootstrap.py`. Cada módulo implementa `name`, `initialize`,
 `get_tools` y `shutdown`.
 

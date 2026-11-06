@@ -5,4 +5,4 @@ router = APIRouter(tags=["health"])
 
 @router.get("/health")
 async def health_check() -> dict[str, str]:
-    return {"status": "ok", "service": "jarvis-central-server"}
+    return {"status": "ok", "service": "bingo-central-server"}

@@ -1,8 +1,8 @@
 from typing import Any
-from app.core.module import JarvisModule
+from app.core.module import BingoModule
 
 
-class SystemInfoModule(JarvisModule):
+class SystemInfoModule(BingoModule):
     @property
     def name(self) -> str:
         return "system_info"
